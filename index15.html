@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: darkorchid;">
+    <p>Q21. How can you sort an array of numbers correctly?
+
+⚠️ By default, .sort() sorts as strings, not numbers.
+So you must use a compare function:</p>
+    <script src="index15.js">
+let numbers = [40, 5, 100, 2];
+numbers.sort((a, b) => a - b); // Ascending
+console.log(numbers); // [2, 5, 40, 100]
+
+numbers.sort((a, b) => b - a); // Descending
+console.log(numbers); // [100, 40, 5, 2]
+
+    </script>
+    
+</body>
+</html>

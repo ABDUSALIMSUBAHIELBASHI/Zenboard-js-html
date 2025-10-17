@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lavender;">
+    <p>Q42. How can you check if a specific word exists in a list of words, ignoring case sensitivity?</p>
+    <script src="index20.js">
+let words = ["Apple", "Banana", "Orange"];
+let search = "banana";
+
+let found = words.some(word => word.toLowerCase() === search.toLowerCase());
+console.log(found); // true
+
+    </script>
+    
+</body>
+</html>

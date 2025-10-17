@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: indianred;">
+    <p>console.log(fruits.join(" - ")); // "apple - banana - orange"
+</p>
+    <script src="index18.js">
+let fruits = ["apple", "banana", "orange"];
+let removeItem = "banana";
+
+let index = fruits.indexOf(removeItem);
+if (index !== -1) {
+  fruits.splice(index, 1); // remove 1 item at that position
+}
+
+console.log(fruits); // ["apple", "orange"]
+
+    </script>
+</body>
+</html>
